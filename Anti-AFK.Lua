@@ -60,7 +60,7 @@ CreditLabel.BackgroundTransparency = 1
 CreditLabel.Position = UDim2.new(0, 0, 0.7, 0)
 CreditLabel.Size = UDim2.new(1, 0, 0.25, 0)
 CreditLabel.Font = Enum.Font.GothamMedium
-CreditLabel.Text = "By CalCor 🍒"
+CreditLabel.Text = "By CalCor"
 CreditLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 CreditLabel.TextSize = 12
 
