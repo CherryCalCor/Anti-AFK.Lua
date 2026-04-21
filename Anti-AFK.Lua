@@ -1,18 +1,14 @@
--- [[ Anti-AFK Script with Modern GUI ]] --
--- [[ Created for CalCor 🍒 ]] --
 
 local Players = game:GetService("Players")
 local VirtualUser = game:GetService("VirtualUser")
 local CoreGui = game:GetService("CoreGui")
-local player = Players.LocalPlayer
+local player = Players.Local player
 
--- Создание UI
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "AntiAFK_CalCor"
 ScreenGui.Parent = CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
--- Основной фрейм
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
@@ -34,7 +30,6 @@ UIStroke.Color = Color3.fromRGB(60, 60, 60)
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke.Parent = MainFrame
 
--- Заголовок/Кнопка
 local ToggleButton = Instance.new("TextButton")
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = MainFrame
@@ -52,7 +47,6 @@ local ButtonCorner = Instance.new("UICorner")
 ButtonCorner.CornerRadius = UDim.new(0, 8)
 ButtonCorner.Parent = ToggleButton
 
--- Подпись
 local CreditLabel = Instance.new("TextLabel")
 CreditLabel.Name = "CreditLabel"
 CreditLabel.Parent = MainFrame
@@ -60,11 +54,10 @@ CreditLabel.BackgroundTransparency = 1
 CreditLabel.Position = UDim2.new(0, 0, 0.7, 0)
 CreditLabel.Size = UDim2.new(1, 0, 0.25, 0)
 CreditLabel.Font = Enum.Font.GothamMedium
-CreditLabel.Text = "By CalCor"
+CreditLabel.Text = "By CalCor🐼"
 CreditLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 CreditLabel.TextSize = 12
 
--- Логика Anti-AFK
 local antiAfkEnabled = false
 local connection
 
@@ -93,5 +86,4 @@ end
 
 ToggleButton.MouseButton1Click:Connect(toggleAntiAfk)
 
--- Уведомление в консоль (опционально)
 print("Anti-AFK Loaded. Created for CalCor 🍒")
