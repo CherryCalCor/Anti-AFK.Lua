@@ -53,8 +53,7 @@ CreditLabel.TextSize = 12
 local antiAfkEnabled = false
 local connection
 local function toggleAntiAfk()
-    antiAfkEnabled = not antiAfkEnabled
-    
+    antiAfkEnabled = not antiAfkEnabled   
     if antiAfkEnabled then
         ToggleButton.Text = "Anti-AFK: ON"
         ToggleButton.TextColor3 = Color3.fromRGB(100, 255, 100)
@@ -74,7 +73,5 @@ local function toggleAntiAfk()
         end
     end
 end
-
 ToggleButton.MouseButton1Click:Connect(toggleAntiAfk)
-
 print("Anti-AFK Loaded. Created for CalCor 🍒")
